@@ -1,0 +1,364 @@
+* {
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto';
+}
+
+.inicio {
+	float: left;
+	padding: 5px;
+	margin:2px;
+	list-style: none;
+}
+
+.nombre_user{
+	padding: 20px 20px;
+	float: left;
+	display: block;
+	text-decoration: none;
+	color: white;
+	margin: auto;
+	font-weight: bold;
+}
+
+.notice {
+	color: #00E676;
+	text-align: center;
+}
+
+.alert {
+	color: #EF5350;
+	text-align: center;
+}
+
+
+header nav {
+	background-color: #23475F;
+	width: 100%;
+	margin: auto;
+
+}
+
+header nav ul {
+	list-style: none;
+	overflow: hidden;
+	font-family:sans-serif;
+}
+
+header nav ul li  {
+	padding: 20px 0;
+	float: right;
+	
+
+}
+header nav ul li a {	
+	padding: 20px 20px;
+	text-decoration: none;
+	color: white;
+	margin: auto;
+}
+
+
+header nav ul li a:hover {
+	background-color: #00D1B1;
+	color: white;
+
+}
+
+
+
+header nav ul li a:visited {
+	background-color:#00D1B1;
+	color: white;
+
+}
+
+
+footer{
+	background-color: white;
+	padding: 20px;
+	border-bottom: 5px solid #0071F9;
+
+}
+
+h4 {
+	color: white;
+}
+
+footer	{
+	font-size:12px;
+	padding: 20px;
+	background-color:#23475F;
+	color: #CACCCB;
+	text-align: center
+
+}	
+
+h2	{
+	color:#EC574B;
+	font-size: 35px;
+}	
+
+h3 {
+	color:#727574;
+	font-size: 25px;
+
+}
+
+.parrafo {
+	color: #727574;
+	text-decoration: none;
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
+.parrafo:hover {
+	color: #FFF;
+}
+
+.main .articles {
+	margin-right:1.5%; 
+	width: 68.5%;
+	float: left;
+	margin-bottom: 0px;
+}
+
+.main .articles article {
+	padding: 20px;
+	background-color: white;
+	margin-bottom: 0px;
+}
+
+
+aside {
+	width: 30%;
+	background-color: #0071F9;
+	float: left;
+	padding: 40px;
+	box-sizing: border-box;
+}
+
+.img {
+	padding: 10px;
+	margin: 0px;
+}
+
+h4
+{
+	padding: 20px;
+	text-align: center;
+	font-size: 30px;
+}
+
+.improgram {
+	padding: 25px;
+}
+
+.p2 {
+	color: white;
+	text-align: center;
+}
+
+
+.contenedor {
+	width: 100%;
+	height: 600px;
+	background-position: center;
+}
+
+.fondo_inicio {
+	background-image: url(/assets/main1-d2401fa2f9d931f73f9255874e0ee3ec13fa29b3d7e31b9ec32ef77d2dc39fa6.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center top;
+	height: 850px;
+}
+
+.edukids {
+	text-align: center;
+	padding: 200px 0 150px;
+	background-color: #e3f2fd;
+}
+
+#edukidstitulo {
+	font-size: 68px;
+	line-height: 1.2;
+	margin-bottom: 40px;
+	color: #23475F;
+}
+
+.divider {
+	width: 80px;
+	border-top: 5px solid #00D1B1;
+	margin: 0 auto;
+}
+
+#edukidsparrafo {
+	font-size: 24px;
+	margin-top: 40px;
+}
+
+.social{
+    margin-top:80px
+}
+
+.social a{
+    color: white;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #23475F;
+    font-size: 24px;
+    font-weight: bold;
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+    line-height: 50px;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+
+.social a:hover{
+    background-color: #00D1B1;
+}
+
+
+/*para la pagina de logueo*/
+
+.login{
+	background-image: url(/assets/registro0-d2c75e5a477bc5ae7435f7b9f1093b03b28cf4117c7d26479e71c3560d061262.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center top;
+	height: 730px;
+
+}
+
+#login {
+	width: 500px;
+	margin: auto;
+	padding-top: 200px;
+	height: 300px;
+	text-align: center;
+}
+
+.campos {
+	width: 100%;
+	margin: 15px auto;
+	border-style: none;
+	height: 50px;
+	border-radius: 10px;
+	padding-left: 15px;
+	font-size: 1.7em;
+	color: #90A4AE;
+	font-weight: 700;
+}
+
+.campos:focus {
+	box-shadow: 0 0 10px #FFF;
+}
+
+.campos:hover {
+	box-shadow: 0 0 10px #FFF;
+}
+
+.campos:invalid {
+	box-shadow: 0 0 10px 5px #EF5350;
+}
+
+.boton {
+	width: 50%;
+	padding: 0;
+	background-color: #23475F;
+	color: #CFD8DC;
+	margin-bottom: 20px;
+	margin-top: 30px;
+}
+
+.boton:hover {
+	opacity: 0.9;
+	box-shadow: 0 0 10px 5px #23475F;
+	-webkit-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+.remember {
+	color: #727574;
+	width: 50%;
+	display: inline;
+	float: left;
+}
+
+
+/*Para el registro*/
+
+.fondoRegistro{
+	background-image: url(/assets/registro1-78a9faf95fd6773443b38f7e51ded401ad3562264cb37a7b3f7d841032105f3f.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center top;
+	height: 650px;
+
+}
+
+#registro {
+	width: 500px;
+	margin-left: 150px;
+	padding-top: 10px;
+	height: 300px;
+	text-align: center;
+}
+
+/* Para el contacto*/
+
+.fondoContacto {
+	background-image: url(/assets/contactenos-ccaf6e033a5a02274371c49bc2d54c81ddb58f1e5b2298ac3a0fc6eab61dc7eb.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center top;
+	height: 650px;
+}
+
+#contacto{
+	width: 330px;
+	margin-left: 520px;
+	padding-top: 60px;
+	height: 300px;
+	text-align: center;
+	font-size: 0.5em;
+}
+
+.titulocontacto {
+	text-align: center;
+	color: #FFC107;
+	font-size: 3em;
+	margin-left: 15px;
+}
+
+.campotextarea {
+	height: 100px;
+	padding: 7px;
+}
+
+.camposcontacto {
+	font-size: 1.7em;
+	text-decoration: none;
+	padding: 6px;
+	display: block;
+	margin: 15px auto;
+	text-align: center;
+	width: 30%;
+	border-radius: 10px;
+	margin-top: 80px;
+}
+
+.juego {
+	background-image: url(/assets/piggy-79420b2eb41dbad7b10cab1902e9809fdeb0b2e5637da9ba0339394c82874891.gif);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 600px;
+
+}
+
