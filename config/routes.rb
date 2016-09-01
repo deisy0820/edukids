@@ -16,6 +16,10 @@ Rails.application.routes.draw do
 
   resource :games
 
+
+
+  
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

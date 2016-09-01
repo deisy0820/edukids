@@ -37,26 +37,26 @@ Rails.application.configure do
   # Raises helpful error messages.
 
 
-  #config.action_mailer.delivery_method = :letter_opener # evitar confirmacion de correo
+  
   config.assets.raise_runtime_errors = true
 
+  
+
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+  #config.action_mailer.asset_host = 'http://dn-marlon.ngrok.io/'
 
-
-  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
-  config.action_mailer.asset_host = 'http://dn-marlon.ngrok.io/'
-
-  config.action_mailer.delivery_method = :smtp
-  config.action_mailer.smtp_settings = {
-    address:              'smtp.gmail.com',
-    port:                  587,
-    domain:               'example.com',
-    user_name:            'deisymsqr6@gmail.com',
-    password:             'Sistemas0825',
-    authentication:       'plain',
-    enable_starttls_auto: true  
-  }
-
+  # config.action_mailer.delivery_method = :smtp
+  # config.action_mailer.smtp_settings = {
+  #   address:              'smtp.gmail.com',
+  #   port:                  587,
+  #   domain:               'example.com',
+  #   user_name:            'deisymsqr6@gmail.com',
+  #   password:             'Sistemas0825',
+  #   authentication:       'plain',
+  #   enable_starttls_auto: true  
+  # }
+   
+   config.action_mailer.delivery_method = :letter_opener # evitar confirmacion de correo
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
