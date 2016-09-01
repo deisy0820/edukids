@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20160809203923) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "plays", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
@@ -34,7 +37,7 @@ ActiveRecord::Schema.define(version: 20160809203923) do
     t.datetime "updated_at"
   end
 
-  add_index "plays", ["email"], name: "index_plays_on_email", unique: true
-  add_index "plays", ["reset_password_token"], name: "index_plays_on_reset_password_token", unique: true
+  add_index "plays", ["email"], name: "index_plays_on_email", unique: true, using: :btree
+  add_index "plays", ["reset_password_token"], name: "index_plays_on_reset_password_token", unique: true, using: :btree
 
 end
