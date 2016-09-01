@@ -1,0 +1,28 @@
+<div class="fondoContacto">
+
+<% if play_signed_in? %>
+
+    <h1 class="titulocontacto">Contáctenos</h1>
+
+    <div id="contacto">
+      <%= form_tag '/contact', multipart: true do %>
+
+          <%= text_field_tag :email, current_play.email, placeholder: 'CORREO', class: "campos" %>
+        
+          <%= text_field_tag :subject, "", placeholder: 'ASUNTO', class: "campos" %>
+
+          <%= text_area_tag :message, "", placeholder: 'MENSAJE', class: "campos campotextarea" %>
+
+          <%= file_field_tag :attachment, class: "campos" %>
+       
+          <%= submit_tag :enviar, class: "boton campos", data: {"disable-with": "Enviando..."} %>
+
+      <% end %>
+    </div>
+
+<% else %>
+    <h1 class="titulocontacto">¡Inicia sesión para empezar!</h1>
+    <%= link_to('Iniciar sesión', new_play_session_path, class: " boton camposcontacto")  %>
+    <%= link_to('Registrarse', new_play_registration_path, class: " boton camposcontacto")  %>
+<% end %>>
+</div>

@@ -1,0 +1,103 @@
+body{
+    background-image: url(<%= asset_path "piggy.gif"%>); 
+    background-size: cover;
+   background-repeat: no-repeat;
+   background-position: absolute;
+  
+}
+
+.siguiente{
+  z-index: 0;
+  right: 130px;
+  bottom: 120px;
+  position: absolute;
+}
+
+
+
+.morado {    
+  width: 200px; 
+  height: 200px; 
+  background-color: #89017E;;
+  margin: 100px 0px 34px 550px;
+  border-radius: 5px;
+}
+
+.azul {
+  width: 200px; 
+  height: 200px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: #2962FF;
+  margin: -250px 40px 50px 900px; 
+}
+
+.rojo {  
+  width: 300px; 
+  height: 200px; 
+  border: 3px solid #D50000;
+  background: #D50000;
+  margin: 30px 30px  10px 550px; 
+  border-radius: 5px;
+}
+.amarillo {
+     width: 150px; 
+     height: 150px;
+     border-radius: 5px solid #FFFF00; 
+     background: #FFFF00;
+     -webkit-transform: rotate(45deg) skew(15deg, 15deg);
+     -moz-transform: rotate(45deg) skew(15deg, 15deg);
+     -ms-transform: rotate(45deg) skew(15deg, 15deg);
+     -o-transform: rotate(45deg) skew(15deg, 15deg);
+     transform: rotate(45deg) skew(15deg, 15deg);
+     margin: -415px 60px  80px 1200px;  
+}
+
+.verde{
+     width: 250px;
+     height: 100px;
+     -moz-border-radius: 0 50% / 0 100%;
+     -webkit-border-radius: 0 50% / 0 100%;
+     border-radius: 0 50% / 0 100%;
+     background: #76FF03;
+     border: 3px solid #76FF03;
+     margin: 55px 60px  90px 1000px;
+}
+
+
+
+
+.siguiente:hover{
+   margin: 10px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; 
+}
+ .morado:hover {
+  -webkit-box-shadow: 0 0 10px 5px #89017E;
+  box-shadow: 0 0 10px 5px #311B92;
+}
+
+.verde:hover {
+  -webkit-box-shadow: 0 0 10px 5px #76FF03;
+  box-shadow: 0 0 10px 5px #76FF03;
+}
+
+.rojo:hover {
+  -webkit-box-shadow: 0 0 10px 5px #D50000;
+  box-shadow: 0 0 10px 5px #D50000;
+}
+
+.amarillo:hover {
+  -webkit-box-shadow: 0 0 10px 5px #FFFF00;
+  box-shadow: 0 0 10px 5px #FFFF00;
+}
+
+.azul:hover {
+  -webkit-box-shadow: 0 0 10px 5px #2962FF;
+  box-shadow: 0 0 10px 5px #2962FF;
+}
+

@@ -1,0 +1,48 @@
+<%= stylesheet_link_tag("style") %>
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viemport" content= "width=device-width, user-scalable=no,initial-scale=1.0, maximum-scale=1.o,maxinium-scala=1.0">
+  <title>Edukitds</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+   <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+<header>
+
+	   	<%= link_to root_path, class: 'inicio' do %>
+		<%= image_tag "inicio.jpg"%>
+    <% end %>
+
+
+		<nav>
+			<ul>
+				<li> <%= link_to 'Contactenos',games_contacto_path%></li>
+
+				<% if play_signed_in? %>
+				<li class="nombre_user"> Hola <%= current_play.nombre %></li>
+			    <li> <%= link_to('Cerrar Sesión', destroy_play_session_path,  :method => :delete) %> </li>
+			    <li><%= link_to 'Jugar',new_play_session_path, class: '.enlaces'%> </li>
+				<% else %>
+				<li><%= link_to 'Jugar',new_play_session_path, class: '.enlaces'%> </li>	
+				<%end%>
+				   
+			</ul>
+
+			<p class="notice"><%= notice %></p>
+			<p class="alert"><%= alert %></p>
+		</nav>
+
+</header>
+
+<%= yield %>
+
+</body>
+</html>
